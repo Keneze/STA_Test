@@ -29,6 +29,9 @@ This is a test automation framework for testing the "Journey Planner" widget on 
 ## console:
 - playwright install
 
+# Run Test
+- On your Visual Studio go to  Test --> Test Explorer --> Click Run to all all tests
+
 # Project Structure
 - Features/ - Contains SpecFlow feature files written in Gherkin.
 - StepDefinitions/ - Contains step definition files that implement the test steps.
