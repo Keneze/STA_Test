@@ -14,7 +14,7 @@ This is a test automation framework for testing the "Journey Planner" widget on 
 
 1. Clone the repository to your local machine:
 
-   git clone <repository-url>
+   git clone https://github.com/Keneze/STA_Test.git
 
 # Open the project in Visual Studio.
 
