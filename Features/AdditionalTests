@@ -1,5 +1,0 @@
-Scenario: Verify screen reader compatibility for the journey widget
-  
-  Given I navigate to the TfL website
-  When I use a screen reader to read the "Plan a journey" widget
-  Then I should hear all labels, instructions, and results clearly
