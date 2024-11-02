@@ -27,6 +27,7 @@ namespace STA_Test.PageObjects
         public ILocator leastWalkingTimes = _page.Locator(".journey-time.no-map");
         public ILocator viewDetailsButton = _page.Locator(".show-detailed-results:has-text('View details')");
         public ILocator hideDetailsButton = _page.Locator(".show-detailed-results:has-text('Hide details')");
+      
 
 
 
@@ -63,8 +64,8 @@ namespace STA_Test.PageObjects
         public async Task InvalidPlanJourney(string from, string to)
         {
             // Locate "From" and "To" fields and enter locations using autocomplete
-            var fromField = _page.Locator("#InputFrom");
-            var toField = _page.Locator("#InputTo");
+            await this.fromField.FillAsync(from);
+            await this.toField.FillAsync(to);
 
 
             // Click "Plan my journey" button

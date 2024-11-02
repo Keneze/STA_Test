@@ -69,6 +69,7 @@ namespace STA_Test.StepDefinitions
         public async Task ThenIShouldSeeCompleteAccessInformationForCoventGardenUndergroundStation()
         {
             Assert.True(await _journeyPlannerPage.hideDetailsButton.IsVisibleAsync());
+     
         }
 
         [When(@"I try to plan a journey with an invalid location")]

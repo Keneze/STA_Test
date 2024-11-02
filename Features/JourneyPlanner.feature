@@ -5,21 +5,21 @@ Feature: Journey Planner
 
   Scenario: Plan a valid journey
     Given I navigate to the TfL website
-    When I plan a journey from "Leicester Square Underground Station" to "Covent Garden Underground Station"
+    When I plan a journey from "Leicest" to "Covent"
     Then I should see journey times for walking and cycling
 
   Scenario: Edit journey preferences
     Given I navigate to the TfL website
-    When I plan a journey from "Leicester Square Underground Station" to "Covent Garden Underground Station"
+    When I plan a journey from "Leicest" to "Covent"
     Then I should see journey times for walking and cycling
     When I edit preferences to select the route with the least walking
     Then the journey time should be updated
 
   Scenario: View details of the journey
     Given I navigate to the TfL website
-    When I plan a journey from "Leicester Square Underground Station" to "Covent Garden Underground Station"
-      When I edit preferences to select the route with the least walking
-   When I click on View Details
+    When I plan a journey from "Leicest" to "Covent"
+    When I edit preferences to select the route with the least walking
+    When I click on View Details
     Then I should see complete access information for Covent Garden Underground Station
 
   Scenario: Plan an invalid journey
