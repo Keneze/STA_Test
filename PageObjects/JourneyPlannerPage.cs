@@ -1,4 +1,4 @@
-﻿//namespace STA_CodingChallenge.Tests.PageObjects
+﻿
 using Microsoft.Playwright;
 using System.Collections.Generic;
 using System.Net;
@@ -10,7 +10,6 @@ namespace STA_Test.PageObjects
     public class JourneyPlannerPage:BasePage
     {
 
-        // Locate "From" and "To" fields and enter locations using autocomplete
         public ILocator fromField = _page.Locator("#InputFrom");
         public ILocator toField = _page.Locator("#InputTo");
         public ILocator suggestionList = _page.Locator(".tt-suggestion");
@@ -27,16 +26,18 @@ namespace STA_Test.PageObjects
         public ILocator leastWalkingTimes = _page.Locator(".journey-time.no-map");
         public ILocator viewDetailsButton = _page.Locator(".show-detailed-results:has-text('View details')");
         public ILocator hideDetailsButton = _page.Locator(".show-detailed-results:has-text('Hide details')");
-      
+        public ILocator upStairsInfo = _page.GetByRole(AriaRole.Link, new() { Name = "Up stairs" });
+        public ILocator upLiftInfo = _page.GetByRole(AriaRole.Link, new() { Name = "Up lift" });
+        public ILocator levelWalkwayInfo = _page.GetByRole(AriaRole.Link, new() { Name = "Level walkway" });
+       
 
 
-
-        public async Task NavigateToHomePage()
+public async Task NavigateToHomePage()
         {
             await _page.GotoAsync("https://tfl.gov.uk/plan-a-journey");
-            //await _page.GetByText("Accept all cookies").ClickAsync();
+          
             await _page.Locator("button:has-text('Accept all cookies')").HoverAsync();
-            await _page.WaitForTimeoutAsync(1000);
+  
             await _page.Locator("button:has-text('Accept all cookies')").ClickAsync();
 
         }

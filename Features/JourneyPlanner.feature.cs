@@ -106,7 +106,7 @@ namespace STA_Test.Features
     testRunner.Given("I navigate to the TfL website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-    testRunner.When("I plan a journey from \"Leicest\" to \"Coven\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I plan a journey from \"Leicest\" to \"Covent\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
     testRunner.Then("I should see journey times for walking and cycling", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -192,7 +192,7 @@ namespace STA_Test.Features
     testRunner.Given("I navigate to the TfL website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 20
-    testRunner.When("I plan a journey from \"Leice\" to \"Coven\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I plan a journey from \"Leicest\" to \"Covent\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 21
     testRunner.When("I edit preferences to select the route with the least walking", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

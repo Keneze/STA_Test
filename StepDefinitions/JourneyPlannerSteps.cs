@@ -23,7 +23,7 @@ namespace STA_Test.StepDefinitions
         public async Task GivenINavigateToTheTFLWebsite()
         {
             await _journeyPlannerPage.NavigateToHomePage();
-           // await BasePage._page.WaitForTimeoutAsync(10000);
+           
         }
 
         [When(@"I plan a journey from ""(.*)"" to ""(.*)""")]
@@ -68,8 +68,12 @@ namespace STA_Test.StepDefinitions
         [Then(@"I should see complete access information for Covent Garden Underground Station")]
         public async Task ThenIShouldSeeCompleteAccessInformationForCoventGardenUndergroundStation()
         {
-            Assert.True(await _journeyPlannerPage.hideDetailsButton.IsVisibleAsync());
-     
+          Assert.True(await _journeyPlannerPage.hideDetailsButton.IsVisibleAsync());
+          Assert.True(await _journeyPlannerPage.upStairsInfo.IsVisibleAsync());
+          Assert.True(await _journeyPlannerPage.upLiftInfo.IsVisibleAsync());
+          Assert.True(await _journeyPlannerPage.levelWalkwayInfo.IsVisibleAsync());
+
+           
         }
 
         [When(@"I try to plan a journey with an invalid location")]

@@ -126,9 +126,3 @@
 #  Given I navigate to the TfL website
 #  When I use the keyboard to navigate and operate the widget
 #  Then I should be able to complete the journey planning without using a mouse
-
-
-
-
-
-
